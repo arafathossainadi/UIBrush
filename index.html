@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>UIBrush</title>
+        <link href="index.css" rel="stylesheet" type="text/css"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+    </head>
+    <body>
+        <section class="fullbody">
+            <header>
+                <h1 class="logo">UIBrush</h1>
+                <aside class="dot"></aside>
+                <aside class="navi">
+                    <a href="#"><h1 class="navi_text">HOME</h1></a>
+                    <a href="#aboutus"><h1 class="navi_text">ABOUT US</h1></a>
+                    <a href="#port"><h1 class="navi_text">PORTFOLIO</h1></a>
+                    <a href="#serv"><h1 class="navi_text">SERVICES</h1></a>
+                    <a href="#cu"><h1 class="navi_text">CONTACT US</h1></a>
+                </aside>
+                <h1 class="the_ul">
+                    THE ULTIMATE COLLECTION OF<br> 
+                     FREE PSD TEMPLATES!!
+                </h1>
+                <button class="download">DOWNLOAD</button>
+            </header>
+            <main>
+                <section class="about_us_area" id="aboutus">
+                    <h1 class="about_us_title">ABOUT US</h1>
+                    <p class="about_us_text">Lorem ipsum dolor sit amet tetuer adipiscing elit, sed diam nonummy nibh<br>euismod tincidunt ut laoreet dolore magna.</p>
+                    <img class="about_us_car" src="images/about_us_car.png" alt="about us car">
+                    <aside class="lorem">
+                        <h1 class="lorem">LOREM IPSUM DOLOR SIT AMET ADIPISICING ELIT.</h1>
+                        <aside class="lorem_line"></aside>
+                        <br>
+                        <article class="lorem_desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<br><br>
+
+                                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                        </article>
+                        <button class="get_started">
+                            GET STARTED
+                        </button>
+                    </aside>
+                </section>
+                <section class="port_area" id="port">
+                    <aside class="port_aside">
+                        <h1 class="port_title">
+                            PORTFOLIO
+                        </h1>
+                        <article class="port_article">
+                            Lorem ipsum dolor sit amet tetuer adipiscing elit, sed diam nonummy nibh<br> euismod tincidunt ut laoreet dolore magna.
+                        </article>
+                    </aside>
+                    <aside class="port_iamges">
+                        <aside id="box">
+                            <aside id="overlay">
+                              <span id="plus">Read More</span>
+                            </aside>
+                        </aside>
+                        <aside id="box2">
+                            <aside id="overlay">
+                              <span id="plus">Read More</span>
+                            </aside>
+                        </aside>
+                        <aside id="box3">
+                            <aside id="overlay">
+                              <span id="plus">Read More</span>
+                            </aside>
+                        </aside>
+                        <aside class="caption1">
+                            <h1 class="cap_project">PROJECT ONE</h1>
+                            <article class="cap_type">Web Design</article>
+                        </aside>
+                        <aside class="caption_other">
+                            <h1 class="cap_project">PROJECT TWO</h1>
+                            <article class="cap_type">Logo</article>
+                        </aside>
+                        <aside class="caption_other">
+                            <h1 class="cap_project">PROJECT THREE</h1>
+                            <article class="cap_type">Photo</article>
+                        </aside>
+                        <aside id="box4">
+                            <aside id="overlay">
+                              <span id="plus">Read More</span>
+                            </aside>
+                        </aside>
+                        <aside id="box5">
+                            <aside id="overlay">
+                              <span id="plus">Read More</span>
+                            </aside>
+                        </aside>
+                        <aside id="box6">
+                            <aside id="overlay">
+                              <span id="plus">Read More</span>
+                            </aside>
+                        </aside>
+                        <aside class="caption1">
+                            <h1 class="cap_project">PROJECT ONE</h1>
+                            <article class="cap_type">Web Design</article>
+                        </aside>
+                        <aside class="caption_other">
+                            <h1 class="cap_project">PROJECT ONE</h1>
+                            <article class="cap_type">Web Design</article>
+                        </aside>
+                        <aside class="caption_other">
+                            <h1 class="cap_project">PROJECT THREE</h1>
+                            <article class="cap_type">Web Design</article>
+                        </aside>
+                    </aside>
+                    <aside class="serv_area" id="serv">
+                        <aside>
+                            <h1 class="serv_title">SERVICES</h1>
+                            <article class="serv_article">Lorem ipsum dolor sit amet tetuer adipiscing elit, sed diam nonummy nibh<br> euismod tincidunt ut laoreet dolore magna.</article>
+                        </aside>
+                        <aside class="serv_box_area">
+                            <aside class="serv_boxes">
+                                <aside class="serv_icon_camera"></aside>
+                                <h1 class="serv_photography_title">PHOTOGRAPHY</h1>
+                                <aside class="serv_photography_line"></aside>
+                                <article class="serv_photography_article">Lorem ipsum dolor sit amet tetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</article>
+                                <button class="serv_photography_readmore">Read more</button>
+                            </aside>
+                            <aside class="serv_boxes">
+                                <aside class="serv_icon_brush"></aside>
+                                <h1 class="serv_photography_title">PAINTING</h1>
+                                <aside class="serv_photography_line"></aside>
+                                <article class="serv_photography_article">Lorem ipsum dolor sit amet tetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</article>
+                                <button class="serv_photography_readmore">Read more</button>
+                            </aside>
+                            <aside class="serv_boxes">
+                                <aside class="serv_icon_scissor"></aside>
+                                <h1 class="serv_photography_title">VIDEO EDITING</h1>
+                                <aside class="serv_photography_line"></aside>
+                                <article class="serv_photography_article">Lorem ipsum dolor sit amet tetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</article>
+                                <button class="serv_photography_readmore">Read more</button>
+                            </aside>
+                            <aside class="serv_boxes">
+                                <aside class="serv_icon_html5"></aside>
+                                <h1 class="serv_photography_title">WEB DESIGN</h1>
+                                <aside class="serv_photography_line"></aside>
+                                <article class="serv_photography_article">Lorem ipsum dolor sit amet tetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</article>
+                                <button class="serv_photography_readmore">Read more</button>
+                            </aside>
+                        </aside>
+                    </aside>
+                    <aside class="contact_us_area" id="cu">
+                        <aside>
+                            <h1 class="contact_us_title">CONTACT US</h1>
+                            <article class="contact_us_article">Lorem ipsum dolor sit amet tetuer adipiscing elit, sed diam nonummy nibh<br> euismod tincidunt ut laoreet dolore magna.</article>
+                        </aside>
+                        <aside class="contact_info_line_add">
+                            <h1 class="contact_info">CONTACT INFO</h1><br>
+                            <aside class="contact_info_line"></aside><br>
+                            <article class="contact_info_article">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero accumsan et.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                            </article>
+                            <h1 class="contact_info address">Address</h1>
+                            <article class="address_text">
+                                1931 Dawson Drive,<br>
+                                15th Avenue,<br>
+                                     Little Rock, AR 72211
+                            </article>
+                        </aside>
+                        <aside class="contact_us_right_padding">
+                            <form class="contact_us_form">
+                                <input class="cu_form_name" type="text" name="Name" placeholder="Name...">
+                                <input class="cu_form_name cu_form_email" type="text" name="email" placeholder="E-Mail..."><br>
+                                <input class="cu_form_name cu_form_subject" type="text" name="subject" placeholder="Subject..."><br>
+                                <textarea class="cu_form_name cu_form_subject cu_form_msg" rows="5" placeholder="Message..."></textarea><br>
+                                <button class="cu_form_submit">SUBMIT</button>
+                            </form>
+                        </aside>
+                    </aside>
+                </section>
+            </main>
+            <section class="footer">
+                <article class="footer_text">Copyright © 2014 UIBrush.</article>
+            </section>
+        </section>
+    </body>
+</html>
